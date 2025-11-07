@@ -1,0 +1,135 @@
+.teams {
+  padding: 2rem 0;
+}
+
+.teams h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #646cff;
+}
+
+.create-team {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #646cff;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.empty-teams {
+  text-align: center;
+  padding: 3rem;
+}
+
+.empty-teams p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.team-header h3 {
+  margin: 0;
+  color: #646cff;
+}
+
+.team-pokemon {
+  margin-bottom: 1.5rem;
+}
+
+.empty-team {
+  text-align: center;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.team-pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.team-pokemon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.team-pokemon-item img {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+
+.team-pokemon-item span {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.add-to-team {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+.add-to-team h4 {
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.favorites-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.favorites-selection .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (prefers-color-scheme: light) {
+  .team-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .team-input {
+    background-color: white;
+    color: #213547;
+  }
+  
+  .team-pokemon-item {
+    background: #f0f0f0;
+  }
+}

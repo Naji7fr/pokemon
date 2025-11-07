@@ -1,0 +1,64 @@
+.favorites {
+  padding: 2rem 0;
+}
+
+.favorites h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #646cff;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 3rem;
+}
+
+.empty-favorites p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.favorite-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favorite-image img {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+.favorite-info {
+  flex: 1;
+}
+
+.favorite-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #646cff;
+}
+
+.favorite-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .favorite-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+}

@@ -1,0 +1,125 @@
+.pokemon-detail {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.pokemon-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pokemon-detail-header h1 {
+  margin: 0;
+  color: #646cff;
+}
+
+.pokemon-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pokemon-detail-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pokemon-detail-image img {
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated;
+}
+
+.pokemon-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pokemon-detail-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.pokemon-detail-section h3 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+.pokemon-types {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pokemon-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-name {
+  min-width: 120px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.stat-value {
+  min-width: 40px;
+  text-align: right;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: #646cff;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .pokemon-detail-content {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .pokemon-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .pokemon-detail-content {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .pokemon-detail-section {
+    background: #ffffff;
+  }
+}
